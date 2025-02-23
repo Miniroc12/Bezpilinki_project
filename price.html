@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Компания 'Без пылинки'">
+  <link rel="icon" href="bez.png" type="image/png">
+  <title>Без пылинки</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container header-top">
+        <div class="logo-title">
+          <img src="logo.png" alt="Логотип компании" class="logo">
+          <h1>Без пылинки</h1>
+        </div>
+        <div class="header-right">
+          <div class="contact-phones">
+            <p><a href="tel:+79601337033">☎ +7 (960) 133-70-33</a></p>
+            <p><a href="tel:+79601337034">☎ +7 (930) 424-86-01</a></p>
+          </div>
+        </div>
+        <div class="nav-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="price.html">Цены</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="prices">
+        <div class="container">
+          <h2>Наши цены</h2>
+          <p>Выберите категорию, чтобы посмотреть прайс:</p>
+
+          <!-- Вкладки -->
+          <div class="tabs">
+            <button class="tab-btn active" onclick="showPrice('appliances')">Бытовая техника</button>
+            <button class="tab-btn" onclick="showPrice('general')">Генеральная уборка</button>
+            <button class="tab-btn" onclick="showPrice('windows')">Мытьё окон</button>
+            <button class="tab-btn" onclick="showPrice('common')">Общая информация</button>
+            <button class="tab-btn" onclick="showPrice('support')">Поддерживающая уборка</button>
+            <button class="tab-btn" onclick="showPrice('home_help')">Помощь по дому</button>
+            <button class="tab-btn" onclick="showPrice('after_renovation')">После ремонта</button>
+          </div>
+
+          <!-- Блоки с прайсами -->
+          <div class="price-content">
+            <img id="appliances" src="img/prices/appliances.jpg" class="price-img active" alt="Бытовая техника">
+            <img id="general" src="img/prices/general.jpg" class="price-img" alt="Генеральная уборка">
+            <img id="windows" src="img/prices/windows.jpg" class="price-img" alt="Мытьё окон">
+            <img id="common" src="img/prices/common.jpg" class="price-img" alt="Общая информация">
+            <img id="support" src="img/prices/support.jpg" class="price-img" alt="Поддерживающая уборка">
+            <img id="home_help" src="img/prices/home_help.jpg" class="price-img" alt="Помощь по дому">
+            <img id="after_renovation" src="img/prices/after_renovation.jpg" class="price-img" alt="После ремонта">
+          </div>
+        </div>
+      </section>
+      <!-- Блок с инструкцией по отправке фото -->
+      <section id="price-inquiry">
+          <div class="container">
+            <h2>Как узнать цену уборки</h2>
+            <p>Чтобы узнать точную стоимость уборки, присылайте нам фотографии вашего помещения в любую из наших соцсетей. Наши специалисты быстро оценят работу и сообщат цену.</p>
+            <div class="social-buttons">
+              <a href="https://wa.me/79601337033" target="_blank" class="social-button whatsapp">
+                <img src="whatsapp.png" alt="WhatsApp">
+                WhatsApp: +7 (960) 133-70-33
+              </a>
+              <a href="https://t.me/Svetlana_muller1" target="_blank" class="social-button telegram">
+                <img src="telegram.png" alt="Telegram">
+                Telegram: @Svetlana_muller1
+              </a>
+              <a href="https://vk.com/bez_pilinki" target="_blank" class="social-button vk">
+                <img src="vk.png" alt="VK">
+                ВКонтакте: Мы в ВКонтакте
+              </a>
+            </div>
+          </div>
+        </section>
+    </main>
+
+
+  </div>
+  <div class="chat-buttons">
+    <a href="https://wa.me/79601337033" target="_blank" class="chat-btn whatsapp">
+      <img src="whatsapp.png" alt="WhatsApp">
+    </a>
+    <a href="https://t.me/Svetlana_muller1" target="_blank" class="chat-btn telegram">
+      <img src="telegram.png" alt="Telegram">
+    </a>
+  </div>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Без пылинки. Все права защищены.</p>
+      <div class="social-links">
+        <a href="https://vk.com/bez_pilinki" target="_blank" class="social vk">Мы в ВКонтакте</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
